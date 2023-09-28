@@ -1,0 +1,26 @@
+
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+  "data": {
+    "user_id": 3,
+    "user_name": "Nithish Konduru",
+    "back_accounts": ["HDFC0CAGSBK", "HDFC0003933"],
+    "accounts": {
+      "bank": "State Bank of India",
+      "branch": "Nellore Branch",
+      "address": "123 Main Street",
+      "city": "Nellore",
+      "district": "Nellore",
+      "state": "Andhra Pradesh",
+      "bank_code": "ABC123",
+      "weather": {
+        "temp": 25.5,
+        "humidity": 50
+      }
+    }
+  }
+}
+###
+GET http://localhost:3000/api/user/3
